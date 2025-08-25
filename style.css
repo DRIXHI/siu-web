@@ -1,6 +1,6 @@
 body {
       font-family: 'Poppins', sans-serif;
-      text-transform: lowercase;      /* makes all letters lowercase */
+      text-transform: capitalize;      /* makes all letters lowercase */
 }
 
 body::first-letter {
@@ -43,4 +43,5 @@ body::first-letter {
     height: 100%;
 
 }
+
 
