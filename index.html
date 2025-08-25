@@ -7,14 +7,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+   
 </head>
-<body class="capitalize font-poppins bg-gray-5000 text-gray-800">
+<body class="font-sans bg-gray-5000 text-gray-800">
     <!-- Header/Navigation -->
     <header class="bg-blue-900 text-white shadow-lg sticky top-0 z-50">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center">
-                <img src="starford logo.jpg" alt="Starford International University Logo" class="h-10 w-10 mr-2 rounded-full shadow" />
+                <img src="./images/starford logo.jpg" alt="Starford International University Logo" class="h-10 w-10 mr-2 rounded-full shadow" />
                 <h1 class="text-2xl font-bold">STARFORD INTERNATIONAL UNIVERSITY</h1>
             </div>
             
@@ -46,16 +46,12 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="home"
-             class="bg-cover bg-center flex items-center justify-center text-center text-white fade-in">
-            <img src="siu-pic" alt="Starford pic" class="bg-cover bg-center flex items-center justify-center text-center text-white fade-in" 
-        <div class="container mx-auto px-4">
-            <h1 class="text-red-700 text-4xl md:text-6xl font-bold mb-4 mt-4">The Quality You Talk about</h1>
+    <section id="home" class="relative flex items-center justify-center text-center text-white fade-in hero-section hero-bg">
+        <div class="absolute inset-0 bg-blue-900 bg-opacity-60"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">The Quality You Talk about</h1>
             <p class="text-xl md:text-2xl mb-8">Education for Sustainable Development</p>
-            <a href="#admission"
-               class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 inline-block">
-                Apply Now
-            </a>
+            <a href="#admission" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 inline-block">Apply Now</a>
         </div>
     </section>
 
@@ -94,12 +90,12 @@
                     
                     <div class="mb-6">
                         <h4 class="text-xl font-semibold mb-2 text-blue-900">Our Vision</h4>
-                        <p class="text-gray-700">To be a world-class university committed to academic excellence and responsive to dynamic local and global realities.</p>
+                        <p class="text-gray-700">To be a globally recognized university that transforms lives through education, research, and innovation.</p>
                     </div>
                     
                     <div>
                         <h4 class="text-xl font-semibold mb-2 text-blue-900">Our Mission</h4>
-                        <p class="text-gray-700">To provide quality university education and training based on local realities and global aspirations through the development, transmission and application of knowledge and innovative research in order to transform society by meeting the high level human resource need of present and future generations.</p>
+                        <p class="text-gray-700">To provide exceptional educational opportunities that are accessible to all, foster intellectual growth, and prepare students to meet the challenges of a rapidly changing world.</p>
                     </div>
                 </div>
                 
@@ -402,14 +398,4 @@
     <script src="script.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
