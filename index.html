@@ -46,14 +46,22 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="relative flex items-center justify-center text-center text-white fade-in hero-section hero-bg">
-        <div class="absolute inset-0 bg-blue-900 bg-opacity-60"></div>
-        <div class="container mx-auto px-4 relative z-10">
+<section id="home" class="relative flex items-center justify-center text-center text-white h-screen overflow-hidden">
+    <!-- Background Image -->
+        <img src="./images/siu-pic.jpg"
+             alt="Background"
+             class="absolute inset-0 w-full h-full object-cover z-0" />
+
+    <!-- Overlay -->
+        <div class="absolute inset-0 bg-blue-900 bg-opacity-60 z-10"></div>
+
+    <!-- Foreground Content -->
+        <div class="container mx-auto px-4 relative z-20">
             <h1 class="text-4xl md:text-6xl font-bold mb-4">The Quality You Talk about</h1>
             <p class="text-xl md:text-2xl mb-8">Education for Sustainable Development</p>
             <a href="#admission" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 inline-block">Apply Now</a>
         </div>
-    </section> -->
+</section>
 
     <!-- About Section -->
     <section id="about" class="py-16 bg-gray-100">
@@ -400,6 +408,7 @@
 </body>
 
 </html>
+
 
 
 
