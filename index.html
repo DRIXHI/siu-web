@@ -14,7 +14,7 @@
     <header class="bg-blue-900 text-white shadow-lg sticky top-0 z-50">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center">
-                <img src="starford logo.jpg" alt="Starford International University Logo" class="h-10 w-10 mr-2 rounded-full shadow" />
+                <img src="./images/starford logo.jpg" alt="Starford International University Logo" class="h-10 w-10 mr-2 rounded-full shadow" />
                 <h1 class="text-2xl font-bold">STARFORD INTERNATIONAL UNIVERSITY</h1>
             </div>
             
@@ -45,23 +45,32 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-<section id="home" class="relative flex items-center justify-center text-center text-white h-screen overflow-hidden">
-    <!-- Background Image -->
-        <img src="./images/siu-pic.jpg"
-             alt="Background"
-             class="absolute inset-0 w-full h-full object-cover z-0" />
-
-    <!-- Overlay -->
-        <div class="absolute inset-0 bg-blue-900 bg-opacity-60 z-10"></div>
-
-    <!-- Foreground Content -->
-        <div class="container mx-auto px-4 relative z-20">
+    <!-- Hero Section --
+    <section id="home" class="relative flex items-center justify-center text-center text-white fade-in hero-section hero-bg">
+        <div class="absolute inset-0 bg-blue-900 bg-opacity-60"></div>
+        <div class="container mx-auto px-4 relative z-10">
             <h1 class="text-4xl md:text-6xl font-bold mb-4">The Quality You Talk about</h1>
             <p class="text-xl md:text-2xl mb-8">Education for Sustainable Development</p>
             <a href="#admission" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 inline-block">Apply Now</a>
         </div>
+    </section> -->
+    <section id="home" class="relative flex items-center justify-center text-center text-white h-screen overflow-hidden">
+    <!-- Background Image -->
+    <img src="./images/siu-pic.jpg"
+         alt="Background"
+         class="absolute inset-0 w-full h-full object-cover z-0" />
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-blue-900 bg-opacity-60 z-10"></div>
+
+    <!-- Foreground Content -->
+    <div class="container mx-auto px-4 relative z-20">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">The Quality You Talk about</h1>
+        <p class="text-xl md:text-2xl mb-8">Education for Sustainable Development</p>
+        <a href="#admission" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 inline-block">Apply Now</a>
+    </div>
 </section>
+
 
     <!-- About Section -->
     <section id="about" class="py-16 bg-gray-100">
@@ -94,7 +103,7 @@
         </div>
     </section>
 
-       <!-- Quick Info Section -->
+    <!-- Quick Info Section -->
     <section class="py-12 bg-white">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -406,9 +415,4 @@
     <script src="script.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
 </body>
-
 </html>
-
-
-
-
