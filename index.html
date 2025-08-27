@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="style.css">
    
 </head>
-<body class="font-sans bg-gray-500 text-gray-800 capitalize">
+<body class="font-sans bg-gray-5000 text-gray-800">
     <!-- Header/Navigation -->
     <header class="bg-blue-900 text-white shadow-lg sticky top-0 z-50">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center">
-                <img src="starford logo.jpg" alt="Starford International University Logo" class="h-10 w-10 mr-2 rounded-full shadow" />
+                <img src="./images/starford logo.jpg" alt="Starford International University Logo" class="h-10 w-10 mr-2 rounded-full shadow" />
                 <h1 class="text-2xl font-bold">STARFORD INTERNATIONAL UNIVERSITY</h1>
             </div>
             
@@ -45,11 +45,19 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section --
+    <section id="home" class="relative flex items-center justify-center text-center text-white fade-in hero-section hero-bg">
+        <div class="absolute inset-0 bg-blue-900 bg-opacity-60"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">The Quality You Talk about</h1>
+            <p class="text-xl md:text-2xl mb-8">Education for Sustainable Development</p>
+            <a href="#admission" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 inline-block">Apply Now</a>
+        </div>
+    </section> -->
     <section id="home" class="relative flex items-center justify-center text-center text-white h-screen overflow-hidden">
     <!-- Background Image -->
-    <img src="siu-pic.jpg"
-         alt="Backgroun"
+    <img src="./images/siu-pic.jpg"
+         alt="Background"
          class="absolute inset-0 w-full h-full object-cover z-0" />
 
     <!-- Overlay -->
@@ -57,7 +65,7 @@
 
     <!-- Foreground Content -->
     <div class="container mx-auto px-4 relative z-20">
-        <h1 class="text-4xl md:text-6xl font-bold mb-4">The Quality You Talk About</h1>
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">The Quality You Talk about</h1>
         <p class="text-xl md:text-2xl mb-8">Education for Sustainable Development</p>
         <a href="#admission" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 inline-block">Apply Now</a>
     </div>
@@ -126,7 +134,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Course Card 1 -->
                 <div class="course-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
-                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Business Administration" class="w-full h-48 object-cover">
+                    <img src="./images/bussiness studies.jpg" alt="Business Administration" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2 text-blue-900">Business Administration</h3>
                         <p class="text-gray-600 mb-4">Develop leadership skills and business acumen with our top-ranked program.</p>
@@ -139,7 +147,7 @@
                 
                 <!-- Course Card 2 -->
                 <div class="course-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
-                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Computer Science" class="w-full h-48 object-cover">
+                    <img src="./images/cs.jpg" alt="Computer Science" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2 text-blue-900">Computer Science</h3>
                         <p class="text-gray-600 mb-4">Master cutting-edge technologies and prepare for a career in tech.</p>
@@ -152,7 +160,7 @@
                 
                 <!-- Course Card 3 -->
                 <div class="course-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
-                    <img src="https://images.unsplash.com/photo-1575505586569-646b2ca898fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="Medicine" class="w-full h-48 object-cover">
+                    <img src="./images/law llb.jpg" alt="Law" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2 text-blue-900">Law LLB</h3>
                         <p class="text-gray-600 mb-4">Study the rules and principles that govern society. Learn about justice, rights, and the legal processes that ensure fairness and order.</p>
@@ -164,10 +172,34 @@
                 </div>
                 <!-- Course Card 4 -->
                 <div class="course-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
-                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Engineering" class="w-full h-48 object-cover">
+                    <img src="./images/i.t.jpg" alt="Information Technology" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2 text-blue-900">Information Technology</h3>
                         <p class="text-gray-600 mb-4">Innovate and design solutions to real-world problems with our engineering programs.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-semibold text-red-600">4 Years</span>
+                            <span class="text-sm font-semibold text-blue-900">Bachelor's Degree</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Course Card 5 -->
+                <div class="course-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <img src="./images/international img.jpg" alt="International Relations and Diplomacy" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-blue-900">International Relations</h3>
+                        <p class="text-gray-600 mb-4">Explore global issues and develop diplomatic skills with our International Relations program.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-semibold text-red-600">4 Years</span>
+                            <span class="text-sm font-semibold text-blue-900">Bachelor's Degree</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- course card 6-->
+                <div class="course-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <img src="./images/banking sytem.jpg" alt="Economic System" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-blue-900">Economics</h3>
+                        <p class="text-gray-600 mb-4">Understand the principles of economics and their impact on society with our Economics program.</p>
                         <div class="flex justify-between items-center">
                             <span class="text-sm font-semibold text-red-600">4 Years</span>
                             <span class="text-sm font-semibold text-blue-900">Bachelor's Degree</span>
@@ -223,48 +255,9 @@
                 </div>
                 
                 <div>
-                    <h3 class="text-2xl font-semibold text-center mb-12 text-blue-900">Request Information</h3>
-                    <!--<form id="infoForm" class="bg-white p-6 rounded-lg shadow-md">
-                    <form id="infoForm" class="bg-white p-6 rounded-lg shadow-md">
-                        <div class="mb-4">
-                            <label class="block text-gray-700 font-medium mb-2" for="name">Full Name</label>
-                            <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-                            <p id="nameError" class="text-red-500 text-sm mt-1 hidden">Please enter your name</p>
-                        </div>
-                        
-                        <div class="mb-4">
-                            <label class="block text-gray-700 font-medium mb-2" for="email">Email Address</label>
-                            <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-                            <p id="emailError" class="text-red-500 text-sm mt-1 hidden">Please enter a valid email</p>
-                        </div>
-                        
-                        <div class="mb-4">
-                            <label class="block text-gray-700 font-medium mb-2" for="phone">Phone Number</label>
-                            <input type="tel" id="phone" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-                            <p id="phoneError" class="text-red-500 text-sm mt-1 hidden">Please enter your phone number</p>
-                        </div>
-                        
-                        <div class="mb-4">
-                            <label class="block text-gray-700 font-medium mb-2" for="program">Program of Interest</label>
-                            <select id="program" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-                                <option value="">Select a program</option>
-                                <option value="business">Business Administration</option>
-                                <option value="cs">Computer Science</option>
-                                <option value="medicine">Medicine</option>
-                                <option value="engineering">Engineering</option>
-                                <option value="arts">Liberal Arts</option>
-                            </select>
-                            <p id="programError" class="text-red-500 text-sm mt-1 hidden">Please select a program</p>
-                        </div>
-                        
-                        <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300">Submit Request</button>
-                    </form>
-                    
-                    <div id="formSuccess" class="hidden mt-4 p-4 bg-green-100 text-green-700 rounded-lg">
-                        Thank you for your interest! We'll contact you soon with more information.
-                    </div>
-                    -->
-                    
+                    <h3 class="text-3xl font-bold text-center mb-12 text-blue-900">Request Information</h3>
+                    <p class="text-gray-700 text-center mb-6">Fill out the form below to receive more information about our programs.</p>
+
                     <form id="infoForm" class="bg-white p-6 rounded-lg shadow-md w-full max-w-md">
                         <div class="mb-4">
                         <label class="block text-gray-700 font-medium mb-2" for="name">Full Name</label>
@@ -282,15 +275,23 @@
                         </div>
 
                         <div class="mb-4">
-                        <label class="block text-gray-700 font-medium mb-2" for="program">Program of Interest</label>
-                        <select id="program" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-                            <option value="">Select a program</option>
-                            <option value="Business Administration">Business Administration</option>
-                            <option value="Computer Science">Computer Science</option>
-                            <option value="Medicine">Medicine</option>
-                            <option value="Engineering">Engineering</option>
-                            <option value="Liberal Arts">Liberal Arts</option>
-                        </select>
+                            <label for="program" class="block text-gray-700 font-medium mb-2">Program of Interest</label>
+                            <input list="programs" id="program" name="program" 
+                                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                                required 
+                                placeholder="Type or select a program">
+                            <datalist id="programs">
+                                <option value="Business Administration (Diploma)">
+                                <option value="Business Administration (Degree)">
+                                <option value="Computer Science (Diploma)">
+                                <option value="Computer Science (Degree)">
+                                <option value="Medicine (Diploma)">
+                                <option value="Medicine (Degree)">
+                                <option value="Engineering (Diploma)">
+                                <option value="Engineering (Degree)">
+                                <option value="Liberal Arts (Diploma)">
+                                <option value="Liberal Arts (Degree)">
+                            </datalist>
                         </div>
 
                         <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
@@ -383,7 +384,7 @@
                 
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
-                    <ul class="space-y-2">
+                    <ul class="flex flex-row space-x-6">
                         <li><a href="#home" class="text-gray-300 hover:text-red-300 transition duration-300">Home</a></li>
                         <li><a href="#about" class="text-gray-300 hover:text-red-300 transition duration-300">About</a></li>
                         <li><a href="#courses" class="text-gray-300 hover:text-red-300 transition duration-300">Courses</a></li>
@@ -407,10 +408,4 @@
     <script src="script.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
 </body>
-
 </html>
-
-
-
-
-
