@@ -1,4 +1,8 @@
 
+html {
+    scroll-behavior: smooth;
+  }
+  
 .fade-in {
     animation: fadeIn 1.5s ease-in-out;
 }
@@ -28,4 +32,13 @@
 }
 
 /* Add your custom styles below this line */
+.course-card {
+    transition: all 0.3s ease-in-out;
+    display: none; /* hide all cards by default */
+}
+
+.hidden {
+  display: none;
+}
+
 

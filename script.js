@@ -316,3 +316,81 @@ document.getElementById("infoForm").addEventListener("submit", function (e) {
   document.getElementById("formSuccess").classList.remove("hidden");
   this.reset();
 });
+
+function showCollege(collegeId) {
+    // Hide all sections
+    const colleges = document.querySelectorAll('.college');
+    colleges.forEach(college => college.classList.add('hidden'));
+
+    // Show selected section
+    const selected = document.getElementById(collegeId);
+    if (selected) {
+      selected.classList.remove('hidden');
+    }
+  }
+
+//new js
+
+
+function filterCourses(college) {
+    const cards = document.querySelectorAll('.course-card');
+    
+    cards.forEach(card => {
+      const cardCollege = card.getAttribute('data-college');
+
+      if (college === 'all' || cardCollege === college) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+}
+
+function filterCourses(college) {
+    const cards = document.querySelectorAll('.course-card');
+
+    cards.forEach(card => {
+      const cardCollege = card.getAttribute('data-college');
+
+      if (college === 'all' || cardCollege === college) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  let hideTimeout;
+  let lastCollege = null;
+
+  function filterCourses(college) {
+    const cards = document.querySelectorAll('.course-card');
+    const messageBox = document.getElementById('course-message');
+
+    // Hide the message when user clicks again
+    messageBox.classList.add('hidden');
+
+    // Track the last selected college
+    lastCollege = college;
+
+    // Clear existing timeout
+    clearTimeout(hideTimeout);
+
+    // Show matching courses
+    cards.forEach(card => {
+      const cardCollege = card.getAttribute('data-college');
+      card.style.display = (college === 'all' || cardCollege === college) ? 'block' : 'none';
+    });
+
+    // Auto-hide courses after 2 minutes
+    hideTimeout = setTimeout(() => {
+      cards.forEach(card => card.style.display = 'none');
+      messageBox.classList.remove('hidden');
+    }, 60000); // 1 minute in milliseconds
+  }
+
+  function showLastCourses() {
+    if (!lastCollege) return;
+    filterCourses(lastCollege);
+  }
+

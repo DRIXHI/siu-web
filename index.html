@@ -7,14 +7,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-   
 </head>
-<body class="font-sans bg-gray-5000 text-gray-800">
+<body class="font-roboto bg-gray-5000 text-gray-800 capitalize">
     <!-- Header/Navigation -->
     <header class="bg-blue-900 text-white shadow-lg sticky top-0 z-50">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center">
-                <img src="starford logo.jpg" alt="Starford International University Logo" class="h-10 w-10 mr-2 rounded-full shadow" />
+                <img src="./images/starford logo.jpg" alt="Starford International University Logo" class="h-10 w-10 mr-2 rounded-full shadow" />
                 <h1 class="text-2xl font-bold">STARFORD INTERNATIONAL UNIVERSITY</h1>
             </div>
             
@@ -46,10 +45,9 @@
     </header>
 
     <!-- Hero Section -->
-    
     <section id="home" class="relative flex items-center justify-center text-center text-white h-screen overflow-hidden">
     <!-- Background Image -->
-    <img src="siu-pic.jpg"
+    <img src="./images/siu-pic.jpg"
          alt="Background"
          class="absolute inset-0 w-full h-full object-cover z-0" />
 
@@ -120,89 +118,413 @@
     </section>
 
     <!-- Courses Section -->
-    <section id="courses" class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Our Courses</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Course Card 1 -->
-                <div class="course-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
-                    <img src="bussiness studies.jpg" alt="Business Administration" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 text-blue-900">Business Administration</h3>
-                        <p class="text-gray-600 mb-4">Develop leadership skills and business acumen with our top-ranked program.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-sm font-semibold text-red-600">4 Years</span>
-                            <span class="text-sm font-semibold text-blue-900">Bachelor's Degree</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Course Card 2 -->
-                <div class="course-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
-                    <img src="cs.jpg" alt="Computer Science" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 text-blue-900">Computer Science</h3>
-                        <p class="text-gray-600 mb-4">Master cutting-edge technologies and prepare for a career in tech.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-sm font-semibold text-red-600">4 Years</span>
-                            <span class="text-sm font-semibold text-blue-900">Bachelor's Degree</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Course Card 3 -->
-                <div class="course-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
-                    <img src="law llb.jpg" alt="Law" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 text-blue-900">Law LLB</h3>
-                        <p class="text-gray-600 mb-4">Study the rules and principles that govern society. Learn about justice, rights, and the legal processes that ensure fairness and order.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-sm font-semibold text-red-600">4 Years</span>
-                            <span class="text-sm font-semibold text-blue-900">Bachelor's Degree</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Course Card 4 -->
-                <div class="course-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
-                    <img src="i.t.jpg" alt="Information Technology" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 text-blue-900">Information Technology</h3>
-                        <p class="text-gray-600 mb-4">Innovate and design solutions to real-world problems with our engineering programs.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-sm font-semibold text-red-600">4 Years</span>
-                            <span class="text-sm font-semibold text-blue-900">Bachelor's Degree</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Course Card 5 -->
-                <div class="course-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
-                    <img src="international img.jpg" alt="International Relations and Diplomacy" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 text-blue-900">International Relations</h3>
-                        <p class="text-gray-600 mb-4">Explore global issues and develop diplomatic skills with our International Relations program.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-sm font-semibold text-red-600">4 Years</span>
-                            <span class="text-sm font-semibold text-blue-900">Bachelor's Degree</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- course card 6-->
-                <div class="course-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
-                    <img src="banking sytem.jpg" alt="Economic System" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 text-blue-900">Economics</h3>
-                        <p class="text-gray-600 mb-4">Understand the principles of economics and their impact on society with our Economics program.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-sm font-semibold text-red-600">4 Years</span>
-                            <span class="text-sm font-semibold text-blue-900">Bachelor's Degree</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <section id="courses">
+      <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">our colleges</h2>
+      <!-- MANAGEMENT SCIENCE DEGREE PROGRAMS -->
+      <div class="flex flex-wrap justify-center gap-4 mb-8">
+          <button onclick="filterCourses('all')" class="college-btn bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-800">All Colleges</button>
+          <button onclick="filterCourses('management')" class="college-btn bg-blue-200 text-blue-900 px-4 py-2 rounded hover:bg-blue-500 hover:text-white">Management Science</button>
+          <button onclick="filterCourses('csit')" class="college-btn bg-blue-200 text-blue-900 px-4 py-2 rounded hover:bg-blue-500 hover:text-white">Computer Science & IT</button>
+          <button onclick="filterCourses('law')" class="college-btn bg-blue-200 text-blue-900 px-4 py-2 rounded hover:bg-blue-500 hover:text-white">Law</button>
+          <button onclick="filterCourses('economics')" class="college-btn bg-blue-200 text-blue-900 px-4 py-2 rounded hover:bg-blue-500 hover:text-white">Economics & Social Studies</button>
+      </div>
 
+    
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+
+          <div class="course-card" data-college="management" data-program="degree">
+          <img src="./image/bussiness studies.jpg" alt="Business Administration" class="w-full h-48 object-cover">
+          <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-blue-900">BBA - Business Administration</h3>
+              <p class="text-gray-600 mb-4">Master leadership, strategic thinking, and global business practices.</p>
+              <div class="flex justify-between items-center">
+              <span class="text-sm font-semibold text-red-600">4 Years</span>
+              <span class="text-sm font-semibold text-blue-900">Bachelor's Degree</span>
+              </div>
+          </div>
+          </div>
+
+          <div class="course-card" data-college="management" data-program="degree">
+          <img src="./image/bussiness studies.jpg" alt="Accounting and Finance" class="w-full h-48 object-cover">
+          <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-blue-900">BSc. Accounting & Finance</h3>
+              <p class="text-gray-600 mb-4">Prepare for careers in auditing, financial analysis, and international tax law.</p>
+              <div class="flex justify-between items-center">
+              <span class="text-sm font-semibold text-red-600">4 Years</span>
+              <span class="text-sm font-semibold text-blue-900">Bachelor's Degree</span>
+              </div>
+          </div>
+          </div>
+
+          <div class="course-card" data-college="management" data-program="degree">
+          <img src="./image/bussiness studies.jpg" alt="Procurement and Logistics" class="w-full h-48 object-cover">
+          <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-blue-900">BSc. Procurement & Logistics</h3>
+              <p class="text-gray-600 mb-4">Build expertise in global supply chains, contracts, and logistics technology.</p>
+              <div class="flex justify-between items-center">
+              <span class="text-sm font-semibold text-red-600">4 Years</span>
+              <span class="text-sm font-semibold text-blue-900">Bachelor's Degree</span>
+              </div>
+          </div>
+          </div>
+
+          <div class="course-card" data-college="management" data-program="degree">
+          <img src="./image/bussiness studies.jpg" alt="Human Resource Management" class="w-full h-48 object-cover">
+          <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-blue-900">BSc. Human Resource Management</h3>
+              <p class="text-gray-600 mb-4">Learn to recruit, train, and manage talent with HR analytics and labor law insights.</p>
+              <div class="flex justify-between items-center">
+              <span class="text-sm font-semibold text-red-600">4 Years</span>
+              <span class="text-sm font-semibold text-blue-900">Bachelor's Degree</span>
+              </div>
+          </div>
+          </div>
+
+          <div class="course-card" data-college="management" data-program="degree">
+          <img src="./image/bussiness studies.jpg" alt="Marketing and Digital Strategy" class="w-full h-48 object-cover">
+          <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-blue-900">BSc. Marketing & Digital Strategy</h3>
+              <p class="text-gray-600 mb-4">Study branding, SEO, analytics, and customer engagement in the digital world.</p>
+              <div class="flex justify-between items-center">
+              <span class="text-sm font-semibold text-red-600">4 Years</span>
+              <span class="text-sm font-semibold text-blue-900">Bachelor's Degree</span>
+              </div>
+          </div>
+          </div>
+
+          <!-- MANAGEMENT SCIENCE DIPLOMA PROGRAMS -->
+
+          <div class="course-card" data-college="management" data-program="diploma">
+          <img src="./image/bussiness studies.jpg" alt="Business Admin Diploma" class="w-full h-48 object-cover">
+          <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-blue-900">Diploma in Business Administration</h3>
+              <p class="text-gray-600 mb-4">Get foundational skills in management, communication, and finance.</p>
+              <div class="flex justify-between items-center">
+              <span class="text-sm font-semibold text-red-600">2 Years</span>
+              <span class="text-sm font-semibold text-blue-900">Diploma</span>
+              </div>
+          </div>
+          </div>
+
+          <div class="course-card" data-college="management" data-program="diploma">
+          <img src="./image/bussiness studies.jpg" alt="Diploma in Accounting" class="w-full h-48 object-cover">
+          <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-blue-900">Diploma in Accounting & Bookkeeping</h3>
+              <p class="text-gray-600 mb-4">Master essential accounting practices and use modern financial tools.</p>
+              <div class="flex justify-between items-center">
+              <span class="text-sm font-semibold text-red-600">2 Years</span>
+              <span class="text-sm font-semibold text-blue-900">Diploma</span>
+              </div>
+          </div>
+          </div>
+
+          <div class="course-card" data-college="management" data-program="diploma">
+          <img src="./image/bussiness studies.jpg" alt="Diploma in Supply Chain" class="w-full h-48 object-cover">
+          <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-blue-900">Diploma in Supply Chain Management</h3>
+              <p class="text-gray-600 mb-4">Understand inventory systems, warehouse management, and sourcing.</p>
+              <div class="flex justify-between items-center">
+              <span class="text-sm font-semibold text-red-600">2 Years</span>
+              <span class="text-sm font-semibold text-blue-900">Diploma</span>
+              </div>
+          </div>
+          </div>
+
+          <div class="course-card" data-college="management" data-program="diploma">
+          <img src="./image/bussiness studies.jpg" alt="Customer Relationship Management" class="w-full h-48 object-cover">
+          <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-blue-900">Diploma in Customer Relationship Management</h3>
+              <p class="text-gray-600 mb-4">Build customer care skills, CRM software proficiency, and sales support experience.</p>
+              <div class="flex justify-between items-center">
+              <span class="text-sm font-semibold text-red-600">2 Years</span>
+              <span class="text-sm font-semibold text-blue-900">Diploma</span>
+              </div>
+          </div>
+          </div>
+              <!-- COMPUTER SCIENCE & INFORMATION TECHNOLOGY DEGREE PROGRAMS -->
+
+          <div class="course-card" data-college="csit" data-program="degree">
+              <img src="computer-science.jpg" alt="Computer Science" class="w-full h-48 object-cover">
+              <div class="p-6">
+                  <h3 class="text-xl font-bold mb-2 text-blue-900">BSc. Computer Science</h3>
+                  <p class="text-gray-600 mb-4">Gain expertise in software engineering, systems design, and computational theory.</p>
+                  <div class="flex justify-between items-center">
+                  <span class="text-sm font-semibold text-red-600">4 Years</span>
+                  <span class="text-sm font-semibold text-blue-900">Bachelor's Degree</span>
+                  </div>
+              </div>
+              </div>
+
+              <div class="course-card" data-college="csit" data-program="degree">
+              <img src="ai.jpg" alt="Data Science & AI" class="w-full h-48 object-cover">
+              <div class="p-6">
+                  <h3 class="text-xl font-bold mb-2 text-blue-900">BSc. Data Science & Artificial Intelligence</h3>
+                  <p class="text-gray-600 mb-4">Learn machine learning, big data processing, and ethical AI development.</p>
+                  <div class="flex justify-between items-center">
+                  <span class="text-sm font-semibold text-red-600">4 Years</span>
+                  <span class="text-sm font-semibold text-blue-900">Bachelor's Degree</span>
+                  </div>
+              </div>
+              </div>
+
+              <div class="course-card" data-college="csit" data-program="degree">
+              <img src="cybersecurity.jpg" alt="Cybersecurity" class="w-full h-48 object-cover">
+              <div class="p-6">
+                  <h3 class="text-xl font-bold mb-2 text-blue-900">BSc. Cybersecurity</h3>
+                  <p class="text-gray-600 mb-4">Focus on ethical hacking, cyber defense, risk analysis, and secure systems.</p>
+                  <div class="flex justify-between items-center">
+                  <span class="text-sm font-semibold text-red-600">4 Years</span>
+                  <span class="text-sm font-semibold text-blue-900">Bachelor's Degree</span>
+                  </div>
+              </div>
+              </div>
+
+              <div class="course-card" data-college="csit" data-program="degree">
+              <img src="software-engineering.jpg" alt="Software Engineering" class="w-full h-48 object-cover">
+              <div class="p-6">
+                  <h3 class="text-xl font-bold mb-2 text-blue-900">BSc. Software Engineering</h3>
+                  <p class="text-gray-600 mb-4">Design, build, and maintain software solutions using agile and DevOps practices.</p>
+                  <div class="flex justify-between items-center">
+                  <span class="text-sm font-semibold text-red-600">4 Years</span>
+                  <span class="text-sm font-semibold text-blue-900">Bachelor's Degree</span>
+                  </div>
+              </div>
+              </div>
+
+              <!-- COMPUTER SCIENCE & I.T. DIPLOMA PROGRAMS -->
+
+              <div class="course-card" data-college="csit" data-program="diploma">
+              <img src="diploma-it.jpg" alt="Diploma in IT" class="w-full h-48 object-cover">
+              <div class="p-6">
+                  <h3 class="text-xl font-bold mb-2 text-blue-900">Diploma in Information Technology</h3>
+                  <p class="text-gray-600 mb-4">Build skills in networking, operating systems, and IT support roles.</p>
+                  <div class="flex justify-between items-center">
+                  <span class="text-sm font-semibold text-red-600">2 Years</span>
+                  <span class="text-sm font-semibold text-blue-900">Diploma</span>
+                  </div>
+              </div>
+              </div>
+
+              <div class="course-card" data-college="csit" data-program="diploma">
+              <img src="web-dev.jpg" alt="Diploma in Web Development" class="w-full h-48 object-cover">
+              <div class="p-6">
+                  <h3 class="text-xl font-bold mb-2 text-blue-900">Diploma in Web Development</h3>
+                  <p class="text-gray-600 mb-4">Master frontend and backend development using HTML, CSS, JavaScript, and frameworks.</p>
+                  <div class="flex justify-between items-center">
+                  <span class="text-sm font-semibold text-red-600">2 Years</span>
+                  <span class="text-sm font-semibold text-blue-900">Diploma</span>
+                  </div>
+              </div>
+              </div>
+
+              <div class="course-card" data-college="csit" data-program="diploma">
+              <img src="networks.jpg" alt="Computer Networks" class="w-full h-48 object-cover">
+              <div class="p-6">
+                  <h3 class="text-xl font-bold mb-2 text-blue-900">Diploma in Computer Networks</h3>
+                  <p class="text-gray-600 mb-4">Understand LAN/WAN setup, routers, firewalls, and basic networking protocols.</p>
+                  <div class="flex justify-between items-center">
+                  <span class="text-sm font-semibold text-red-600">2 Years</span>
+                  <span class="text-sm font-semibold text-blue-900">Diploma</span>
+                  </div>
+              </div>
+              </div>
+
+              <div class="course-card" data-college="csit" data-program="diploma">
+              <img src="cybersecurity-fundamentals.jpg" alt="Cybersecurity Fundamentals" class="w-full h-48 object-cover">
+              <div class="p-6">
+                  <h3 class="text-xl font-bold mb-2 text-blue-900">Diploma in Cybersecurity Fundamentals</h3>
+                  <p class="text-gray-600 mb-4">Learn the basics of cyber threats, incident response, and digital protection.</p>
+                  <div class="flex justify-between items-center">
+                  <span class="text-sm font-semibold text-red-600">2 Years</span>
+                  <span class="text-sm font-semibold text-blue-900">Diploma</span>
+                  </div>
+              </div>
+          </div>
+
+                  <!-- COLLEGE OF LAW – DEGREE PROGRAMS -->
+
+          <div class="course-card" data-college="law" data-program="degree">
+              <img src="law-llb.jpg" alt="Law LLB" class="w-full h-48 object-cover">
+              <div class="p-6">
+                  <h3 class="text-xl font-bold mb-2 text-blue-900">LLB - Bachelor of Laws</h3>
+                  <p class="text-gray-600 mb-4">Study civil, criminal, and constitutional law to prepare for legal practice or judiciary roles.</p>
+                  <div class="flex justify-between items-center">
+                  <span class="text-sm font-semibold text-red-600">4 Years</span>
+                  <span class="text-sm font-semibold text-blue-900">Bachelor's Degree</span>
+                  </div>
+              </div>
+              </div>
+
+              <div class="course-card" data-college="law" data-program="degree">
+              <img src="human-rights.jpg" alt="Human Rights Law" class="w-full h-48 object-cover">
+              <div class="p-6">
+                  <h3 class="text-xl font-bold mb-2 text-blue-900">BA. Human Rights Law</h3>
+                  <p class="text-gray-600 mb-4">Focus on legal protections for individuals and marginalized groups globally.</p>
+                  <div class="flex justify-between items-center">
+                  <span class="text-sm font-semibold text-red-600">4 Years</span>
+                  <span class="text-sm font-semibold text-blue-900">Bachelor's Degree</span>
+                  </div>
+              </div>
+          </div>
+
+          <div class="course-card" data-college="law" data-program="degree">
+          <img src="international-law.jpg" alt="International Law" class="w-full h-48 object-cover">
+          <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-blue-900">LLB - International Law</h3>
+              <p class="text-gray-600 mb-4">Explore treaties, international courts, and legal frameworks across borders.</p>
+              <div class="flex justify-between items-center">
+              <span class="text-sm font-semibold text-red-600">4 Years</span>
+              <span class="text-sm font-semibold text-blue-900">Bachelor's Degree</span>
+              </div>
+          </div>
+          </div>
+
+          <div class="course-card" data-college="law" data-program="degree">
+          <img src="commercial-law.jpg" alt="Commercial Law" class="w-full h-48 object-cover">
+          <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-blue-900">LLB - Commercial Law</h3>
+              <p class="text-gray-600 mb-4">Study business contracts, trade regulations, and commercial dispute resolution.</p>
+              <div class="flex justify-between items-center">
+              <span class="text-sm font-semibold text-red-600">4 Years</span>
+              <span class="text-sm font-semibold text-blue-900">Bachelor's Degree</span>
+              </div>
+          </div>
+          </div>
+
+          <!-- COLLEGE OF LAW – DIPLOMA PROGRAMS -->
+
+          <div class="course-card" data-college="law" data-program="diploma">
+          <img src="diploma-law.jpg" alt="Diploma in Law" class="w-full h-48 object-cover">
+          <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-blue-900">Diploma in Legal Studies</h3>
+              <p class="text-gray-600 mb-4">Get foundational knowledge of legal systems, contracts, and criminal law.</p>
+              <div class="flex justify-between items-center">
+              <span class="text-sm font-semibold text-red-600">2 Years</span>
+              <span class="text-sm font-semibold text-blue-900">Diploma</span>
+              </div>
+          </div>
+          </div>
+
+          <div class="course-card" data-college="law" data-program="diploma">
+          <img src="criminal-justice.jpg" alt="Diploma in Criminal Justice" class="w-full h-48 object-cover">
+          <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-blue-900">Diploma in Criminal Justice</h3>
+              <p class="text-gray-600 mb-4">Learn criminal law principles, evidence handling, and correctional procedures.</p>
+              <div class="flex justify-between items-center">
+              <span class="text-sm font-semibold text-red-600">2 Years</span>
+              <span class="text-sm font-semibold text-blue-900">Diploma</span>
+              </div>
+          </div>
+          </div>
+
+          <div class="course-card" data-college="law" data-program="diploma">
+          <img src="diploma-paralegal.jpg" alt="Diploma in Paralegal Studies" class="w-full h-48 object-cover">
+          <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-blue-900">Diploma in Paralegal Studies</h3>
+              <p class="text-gray-600 mb-4">Train in legal writing, research, and administrative procedures for legal support roles.</p>
+              <div class="flex justify-between items-center">
+              <span class="text-sm font-semibold text-red-600">2 Years</span>
+              <span class="text-sm font-semibold text-blue-900">Diploma</span>
+              </div>
+          </div>
+          </div>
+
+                  <!-- ECONOMICS & SOCIAL SCIENCES – DEGREE PROGRAMS -->
+
+          <div class="course-card" data-college="economics" data-program="degree">
+          <img src="economics.jpg" alt="Economics" class="w-full h-48 object-cover">
+          <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-blue-900">BA. Economics</h3>
+              <p class="text-gray-600 mb-4">Study macroeconomics, microeconomics, and policy-making for real-world applications.</p>
+              <div class="flex justify-between items-center">
+              <span class="text-sm font-semibold text-red-600">4 Years</span>
+              <span class="text-sm font-semibold text-blue-900">Bachelor's Degree</span>
+              </div>
+          </div>
+          </div>
+
+          <div class="course-card" data-college="economics" data-program="degree">
+          <img src="international-relations.jpg" alt="International Relations" class="w-full h-48 object-cover">
+          <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-blue-900">BA. International Relations</h3>
+              <p class="text-gray-600 mb-4">Explore diplomacy, conflict resolution, and global governance in international affairs.</p>
+              <div class="flex justify-between items-center">
+              <span class="text-sm font-semibold text-red-600">4 Years</span>
+              <span class="text-sm font-semibold text-blue-900">Bachelor's Degree</span>
+              </div>
+          </div>
+          </div>
+
+          <div class="course-card" data-college="economics" data-program="degree">
+          <img src="development-studies.jpg" alt="Development Studies" class="w-full h-48 object-cover">
+          <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-blue-900">BA. Development Studies</h3>
+              <p class="text-gray-600 mb-4">Understand sustainable development, global inequality, and international aid systems.</p>
+              <div class="flex justify-between items-center">
+              <span class="text-sm font-semibold text-red-600">4 Years</span>
+              <span class="text-sm font-semibold text-blue-900">Bachelor's Degree</span>
+              </div>
+          </div>
+          </div>
+
+          <div class="course-card" data-college="economics" data-program="degree">
+          <img src="public-admin.jpg" alt="Public Administration" class="w-full h-48 object-cover">
+          <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-blue-900">BA. Public Administration</h3>
+              <p class="text-gray-600 mb-4">Prepare for civil service careers with courses in governance, policy, and management.</p>
+              <div class="flex justify-between items-center">
+              <span class="text-sm font-semibold text-red-600">4 Years</span>
+              <span class="text-sm font-semibold text-blue-900">Bachelor's Degree</span>
+              </div>
+          </div>
+          </div>
+
+          <!-- ECONOMICS & SOCIAL SCIENCES – DIPLOMA PROGRAMS -->
+
+          <div class="course-card" data-college="economics" data-program="diploma">
+          <img src="diploma-economics.jpg" alt="Diploma in Economics" class="w-full h-48 object-cover">
+          <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-blue-900">Diploma in Economics</h3>
+              <p class="text-gray-600 mb-4">Cover the fundamentals of economic theory, markets, and public finance.</p>
+              <div class="flex justify-between items-center">
+              <span class="text-sm font-semibold text-red-600">2 Years</span>
+              <span class="text-sm font-semibold text-blue-900">Diploma</span>
+              </div>
+          </div>
+          </div>
+
+          <div class="course-card" data-college="economics" data-program="diploma">
+          <img src="diplomacy.jpg" alt="Diploma in Diplomacy" class="w-full h-48 object-cover">
+          <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-blue-900">Diploma in Diplomacy & International Affairs</h3>
+              <p class="text-gray-600 mb-4">Gain skills in protocol, negotiation, and international communication.</p>
+              <div class="flex justify-between items-center">
+              <span class="text-sm font-semibold text-red-600">2 Years</span>
+              <span class="text-sm font-semibold text-blue-900">Diploma</span>
+              </div>
+          </div>
+          </div>
+
+          <div class="course-card" data-college="economics" data-program="diploma">
+          <img src="diploma-social.jpg" alt="Diploma in Social Policy" class="w-full h-48 object-cover">
+          <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-blue-900">Diploma in Social Policy</h3>
+              <p class="text-gray-600 mb-4">Understand welfare systems, community development, and social justice frameworks.</p>
+              <div class="flex justify-between items-center">
+              <span class="text-sm font-semibold text-red-600">2 Years</span>
+              <span class="text-sm font-semibold text-blue-900">Diploma</span>
+              </div>
+          </div>
+          </div>
+
+      </div>
+      <div id="course-message" class="text-center mt-6 hidden">
+          <p class="bg-green-200 text-green-700  text-lg mb-4">Courses have been hidden due to inactivity.</p>
+          <button onclick="showLastCourses()" class="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-800">
+              Show Courses Again
+          </button>
+      </div>
+    </section>
     <!-- Admission Section -->
     <section id="admission" class="py-16 bg-gray-100">
         <div class="container mx-auto px-4">
@@ -267,61 +589,55 @@
                         <input type="tel" id="phone" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
                         </div>
 
+                        <!-- Program of Interest Input -->
                         <div class="mb-4">
                             <label for="program" class="block text-gray-700 font-medium mb-2">Program of Interest</label>
-                            <input list="programs" id="program" name="program" 
-                                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
-                                required 
-                                placeholder="Type or select a program">
+                            <input list="programs" id="program" name="program"
+                                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    required placeholder="Type or select a program">
                             <datalist id="programs">
-                                <!-- College of Business Management -->
-                                <option value="Business Administration (Diploma)">
-                                <option value="Business Administration (Degree)">
-                                <option value="Marketing (Diploma)">
-                                <option value="Marketing (Degree)">
-                                <option value="Accounting (Diploma)">
-                                <option value="Accounting (Degree)">
-                                <option value="Human Resource Management (Diploma)">
-                                <option value="Human Resource Management (Degree)">
-                                <option value="Finance and Banking (Diploma)">
-                                <option value="Finance and Banking (Degree)">
-                                <option value="Procurement and Supply Chain Management (Diploma)">
-                                <option value="Procurement and Supply Chain Management (Degree)">
-                            
-                                <!-- College of Computer and Information Technology -->
-                                <option value="Computer Science (Diploma)">
-                                <option value="Computer Science (Degree)">
-                                <option value="Information Technology (Diploma)">
-                                <option value="Information Technology (Degree) coming soon">
-                                <option value="Software Engineering (Diploma) coming soon">
-                                <option value="Software Engineering (Degree) coming soon">
-                                <option value="Cybersecurity (Diploma) coming soon">
-                                <option value="Cybersecurity (Degree) coming soon">
-                                <option value="Data Science (Diploma) coming soon">
-                                <option value="Data Science (Degree) coming soon">
-                                <option value="Artificial Intelligence (Diploma) coming soon">
-                                <option value="Artificial Intelligence (Degree) coming soon">
-                            
-                                <!-- College of Economics and Social Sciences -->
-                                <option value="Economics (Diploma)">
-                                <option value="Economics (Degree)">
-                                <option value="International Relations (Diploma)">
-                                <option value="International Relations (Degree)">
-                                <option value="Development Studies (Diploma)">
-                                <option value="Development Studies (Degree)">
-                                <option value="Sociology (Diploma)">
-                                <option value="Sociology (Degree)">
-                                <option value="Political Science (Diploma)">
-                                <option value="Political Science (Degree)">
-                                <option value="Statistics (Diploma)">
-                                <option value="Statistics (Degree)">
-                            
-                                <!-- College of Law -->
-                                <option value="Law LLB (Degree)">
-                                <option value="Paralegal Studies (Diploma) coming soon">
-                                <option value="Legal Studies (Diploma) coming soon">
-                            </datalist>
+                                <!-- Options will be inserted via JS -->
+                                 
+                                  <!-- Management Science -->
+                                  <option value="BBA - Business Administration">
+                                  <option value="BSc. Accounting & Finance">
+                                  <option value="BSc. Human Resource Management">
+                                  <option value="BSc. Marketing & Digital Strategy">
+                                  <option value="BSc. Procurement & Logistics">
+                                  <option value="Diploma in Accounting & Bookkeeping">
+                                  <option value="Diploma in Business Administration">
+                                  <option value="Diploma in Customer Relationship Management">
+                                  <option value="Diploma in Supply Chain Management">
 
+                                  <!-- Computer Science & IT -->
+                                  <option value="BSc. Computer Science">
+                                  <option value="BSc. Cybersecurity">
+                                  <option value="BSc. Data Science & Artificial Intelligence">
+                                  <option value="BSc. Software Engineering">
+                                  <option value="Diploma in Computer Networks">
+                                  <option value="Diploma in Cybersecurity Fundamentals">
+                                  <option value="Diploma in Information Technology">
+                                  <option value="Diploma in Web Development">
+
+                                  <!-- Law -->
+                                  <option value="BA. Human Rights Law">
+                                  <option value="Diploma in Criminal Justice">
+                                  <option value="Diploma in Legal Studies">
+                                  <option value="Diploma in Paralegal Studies">
+                                  <option value="LLB - Bachelor of Laws">
+                                  <option value="LLB - Commercial Law">
+                                  <option value="LLB - International Law">
+
+                                  <!-- Economics & Social Sciences -->
+                                  <option value="BA. Development Studies">
+                                  <option value="BA. Economics">
+                                  <option value="BA. International Relations">
+                                  <option value="BA. Public Administration">
+                                  <option value="Diploma in Diplomacy & International Affairs">
+                                  <option value="Diploma in Economics">
+                                  <option value="Diploma in Social Policy">
+                            </datalist>
+                            <p id="programDescription" class="mt-2 text-sm text-gray-600 italic"></p>
                         </div>
 
                         <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
@@ -438,8 +754,4 @@
     <script src="script.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
 </body>
-
 </html>
-
-
-
