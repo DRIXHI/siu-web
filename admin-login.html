@@ -1,23 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Admin Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
 </head>
-<body>
-  <h2>Admin Login</h2>
+<body class="min-h-screen flex items-center justify-center bg-gray-100">
+  <div class="bg-white p-8 rounded-2xl shadow-lg w-full max-w-md">
+    <h2 class="text-2xl font-bold text-center text-blue-900 mb-6">Admin Login</h2>
 
-  <form id="loginForm">
-    <input type="email" id="email" placeholder="Email" required><br><br>
-    <input type="password" id="password" placeholder="Password" required><br><br>
-    <button type="submit">Login</button>
-    <p id="error" style="color: red;"></p>
-  </form>
+    <!-- Login Form -->
+    <form id="loginForm" class="space-y-5">
+      <!-- Email -->
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required
+          class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition" />
+      </div>
 
+      <!-- Password -->
+      <div>
+        <label for="password" class="block text-sm font-medium text-gray-700 mb-1">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required
+          class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition" />
+      </div>
+
+      <!-- Error -->
+      <p id="error" class="text-red-600 text-sm font-medium"></p>
+
+      <!-- Submit Button -->
+      <button type="submit"
+        class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg shadow-md transition">
+        Login
+      </button>
+    </form>
+  </div>
+
+  <!-- Supabase Auth -->
   <script>
-    const SUPABASE_URL = 'https://cjmjryqrwqrquumzbegk.supabase.co'; // 🔁 Replace this
-    const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNqbWpyeXFyd3FycXV1bXpiZWdrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc2ODQzMjUsImV4cCI6MjA3MzI2MDMyNX0.YZ8agE3HmBV0hhftKn70WZyjVxp7mRfn2zIcFq9yJKI';                 // 🔁 Replace this
-    const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+    const SUPABASE_URL = 'https://cjmjryqrwqrquumzbegk.supabase.co'// 🔁 Replace
+    const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNqbWpyeXFyd3FycXV1bXpiZWdrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc2ODQzMjUsImV4cCI6MjA3MzI2MDMyNX0.YZ8agE3HmBV0hhftKn70WZyjVxp7mRfn2zIcFq9yJKI'; // 🔁 Replace
+    const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
     const loginForm = document.getElementById('loginForm');
     const errorDisplay = document.getElementById('error');
@@ -28,7 +53,7 @@
       const email = document.getElementById('email').value;
       const password = document.getElementById('password').value;
 
-      const { data, error } = await supabase.auth.signInWithPassword({
+      const { data, error } = await supabaseClient.auth.signInWithPassword({
         email,
         password
       });
@@ -37,6 +62,7 @@
         errorDisplay.textContent = '❌ ' + error.message;
         console.error(error);
       } else {
+        errorDisplay.textContent = '';
         alert('✅ Login successful!');
         window.location.href = 'admin-dashboard.html';
       }
