@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Login</title>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+</head>
+<body>
+  <h2>Admin Login</h2>
+
+  <form id="loginForm">
+    <input type="email" id="email" placeholder="Email" required><br><br>
+    <input type="password" id="password" placeholder="Password" required><br><br>
+    <button type="submit">Login</button>
+    <p id="error" style="color: red;"></p>
+  </form>
+
+  <script>
+    const SUPABASE_URL = 'https://cjmjryqrwqrquumzbegk.supabase.co'; // 🔁 Replace this
+    const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNqbWpyeXFyd3FycXV1bXpiZWdrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc2ODQzMjUsImV4cCI6MjA3MzI2MDMyNX0.YZ8agE3HmBV0hhftKn70WZyjVxp7mRfn2zIcFq9yJKI';                 // 🔁 Replace this
+    const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
+    const loginForm = document.getElementById('loginForm');
+    const errorDisplay = document.getElementById('error');
+
+    loginForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+
+      const { data, error } = await supabase.auth.signInWithPassword({
+        email,
+        password
+      });
+
+      if (error) {
+        errorDisplay.textContent = '❌ ' + error.message;
+        console.error(error);
+      } else {
+        alert('✅ Login successful!');
+        window.location.href = 'admin-dashboard.html';
+      }
+    });
+  </script>
+</body>
+</html>
